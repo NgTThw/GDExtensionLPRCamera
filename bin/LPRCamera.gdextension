@@ -1,0 +1,54 @@
+[configuration]
+
+entry_symbol = "lpr_camera_init"
+compatibility_minimum = "4.2"
+reloadable = true
+
+
+[libraries]
+
+windows.debug.x86_64 = "res://bin/LPRCamera.windows.template_debug.x86_64.dll"
+windows.release.x86_64 = "res://bin/LPRCamera.windows.template_release.x86_64.dll"
+
+
+[dependencies]
+
+windows.debug = {
+
+}
+windows.release = {
+    "res://bin/opencv_videoio4150.dll": "",
+    "res://bin/opencv_dnn4150.dll": "",
+    "res://bin/opencv_cudaarithm4150.dll": "",
+    "res://bin/opencv_cudaimgproc4150.dll": "",
+    "res://bin/opencv_core4150.dll": "",
+    "res://bin/opencv_imgproc4150.dll": "",
+    "res://bin/opencv_imgcodecs4150.dll": "",
+    "res://bin/opencv_objdetect4150.dll": "",
+    "res://bin/opencv_video4150.dll": "",
+    "res://bin/opencv_tracking4150.dll": "",
+    "res://bin/opencv_text4150.dll": "",
+    "res://bin/opencv_highgui4150.dll": "",
+    "res://bin/google.tesseract.libtesseract-main.dll": "",
+}
+
+linux.debug = {
+    "res://bin/libopencv_core.so" : "",
+    "res://bin/libopencv_imgcodecs.so" : "",
+    "res://bin/libopencv_imgproc.so" : "",
+    "res://bin/libopencv_videoio.so" : "",
+    "res://bin/libopencv_objdetect.so" : "",
+    "res://bin/libopencv_video.so" : "",
+    "res://bin/libopencv_tracking.so" : "",
+    "res://bin/libopencv_dnn.so" : ""
+}
+linux.release = {
+    "res://bin/libopencv_core.so" : "",
+    "res://bin/libopencv_imgcodecs.so" : "",
+    "res://bin/libopencv_imgproc.so" : "",
+    "res://bin/libopencv_videoio.so" : "",
+    "res://bin/libopencv_objdetect.so" : "",
+    "res://bin/libopencv_video.so" : "",
+    "res://bin/libopencv_tracking.so" : "",
+    "res://bin/libopencv_dnn.so" : ""
+}
